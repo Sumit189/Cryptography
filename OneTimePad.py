@@ -23,3 +23,12 @@ def encrypt_decrypt(msg,key):
     return res
 
 
+while(True):
+    choice=int(input("\n\nPress:\n1. Encrypt\n2. Decrypt\n3. Exit\n"))
+    if choice==1:
+        msg=str(input("Enter Message: "))
+        msg=msg.upper()
+        key=str(input("Key: "))
+        key=key.upper()
+        en=encrypt_decrypt(msg,key)
+        print("Encrypted msg: ",en)
