@@ -32,3 +32,14 @@ while(True):
         key=key.upper()
         en=encrypt_decrypt(msg,key)
         print("Encrypted msg: ",en)
+    elif choice==2:
+        msg=str(input("Enter Encrypted Message: "))
+        msg=msg.upper()
+        key=str(input("Key: "))
+        key=key.upper()
+        dec=encrypt_decrypt(msg,key)
+        print("Decrypted msg: ",dec)
+    elif choice==3:
+        exit(0)
+    else:
+        print("Wrong Input...")
